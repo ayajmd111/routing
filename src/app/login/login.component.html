@@ -1,0 +1,27 @@
+<div class="container">
+  <form class="form-horizontal">
+
+      <div class="col-md-5 col-md-offset-8 log">
+          <div class="form-group">
+              <label for="Prefered Vendor" class="col-sm-4 control-label">UserName:</label>
+              <div class="col-sm-6">
+                  <input type="text" class="form-control" [(ngModel)]="logindata.uname" name="uname" placeholder="UserName">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="Vendor Billing Address" class="col-sm-4 control-label">password:</label>
+              <div class="col-sm-6">
+                  <input type="password" class="form-control" [(ngModel)]="logindata.pass" name="pass" placeholder="password">
+              </div>
+            </div>
+              <div class="form-group">
+                <div class="col-md-offset-5">
+    <button class="btn btn-success" type="submit"(click)="loginuser()" >submit</button>&emsp;&emsp;
+    <button class="btn btn-danger" type="reset">cancel</button>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+{{user|json}}

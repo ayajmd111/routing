@@ -1,0 +1,57 @@
+
+      <div class="container">
+        <form class="form-horizontal">
+
+            <div class="col-md-5 col-md-offset-8 reg">
+                <div class="form-group">
+                    <label for="Prefered Vendor" class="col-sm-4 control-label">first name:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="user.fname" name="fname" placeholder="first name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Vendor Billing Address" class="col-sm-4 control-label">last name:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="user.lname" name="lname" placeholder="last name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Vendor Billing Address" class="col-sm-4 control-label">Date Of Birth:</label>
+                    <div class="col-sm-6">
+                        <input type="date" class="form-control" [(ngModel)]="user.DOB" name="DOB" placeholder="dd-mm-yyyy">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Vendor Billing Address" class="col-sm-4 control-label">email:</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" [(ngModel)]="user.email" name="email" placeholder="Enter-email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-4 control-label">UserName:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="user.uname" name="uname" placeholder="Enter-password">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password" class="col-sm-4 control-label">password:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" [(ngModel)]="user.pass" name="pass" placeholder="Enter-password">
+                    </div>
+                </div>
+
+               
+
+                        <div class="form-group">
+                        <div class="col-md-offset-5">
+            <button class="btn btn-success" type="submit" (click)="reguser()">submit</button>&emsp;&emsp;
+            <button class="btn btn-danger" type="reset">cancel</button>
+        
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+  {{user|json}}
